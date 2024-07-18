@@ -12,20 +12,21 @@ if place == "forest": #added another = to compare if values are equal
         print("You found a boat!")
 elif place == "cave": #changed elif to else to be opposite initial if condition
     print("You find a hidden treasure!")
-else:
-    pass
-
 
 #Task 2: Setting the Scene
 #Based on your corrected code from Task 1, expand the game. 
 #If the user chooses "cave", ask them if they want to "light a torch" or "proceed in the dark", and provide outcomes for each decision.
 
 # section for cave input
-if place == "cave":
+elif place == "cave":
     light = input("Would you like to light a torch or proceed in the dark? ")
     if light == "light a torch":
         print("As you like a torch, bats start to sworm you! Run for your life!")
     elif light == "proceed in the dark":
         print("You proceed in the dark and go unnoticed. You're ready for another adventure.")
 else:
-    pass
+    pass # for invalid choices as per task 3
+
+#Task 3: Default Path
+#If the user makes an invalid choice at any point, incorporate a pass statement to handle it. 
+
